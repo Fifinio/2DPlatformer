@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="gameCanva"></canvas>
+    <img src ="./img/level2.png" id="secondLevel">
+    <img src="./img/Spritesheet.png" id="player">
+    <img src="./img/coins-chests-etc-2-0.png" id="coins">
+    <img src="./img/background.png" id="background">
+    <img src="./img/Mossy - FloatingPlatforms.png" id="platform">
+    <img src="./img/Dimensional_Portal.png" id="portal">
+    <div id="scoreDisplay">Score: 0</div>
+    <div id="goalScore">Goal: Collect 15 coins</div>
+    <div id="menu">
+        <h1>2DPlatformer</h1>
+        <button id="startGameButton">START</button>
+    </div>
+    <div id="debug">
+        <h2>Debug INFO</h2>
+        <h3>Player</h3>
+        <div class="debug-section" id="playerDebug"></div>
+        <h3>Background</h3>
+        <div class="debug-section" id="backgroundDebug"></div>
+        <h3>Platform</h3>
+        <div class="debug-section" id="platformDebug"></div>
+        <h3>Level 2</h3>
+        <div class="debug-section" id="level2Debug"></div>
+    </div>
+    
+    <script type="module" src="player.js"></script>
+    <script type="module" src="platform.js"></script>
+    <script type="module" src="background.js"></script>
+    <script type="module" src="coin.js"></script>
+    <script type="module" src="portal.js"></script>
+    <script type="module" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
